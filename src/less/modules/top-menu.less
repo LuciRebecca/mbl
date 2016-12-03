@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+Top Menu
+--------------------------------------------------------------*/
+.navbar {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	border:0;
+  border-top: 7px solid @cream;
+}
+
+.navbar a {
+	color: @dark-grey;
+	text-transform: lowercase;
+}
+
+header > nav ul {
+	font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+.navbar .navbar-brand {
+	margin-left: 0;
+  padding: 1em 0;
+	font-size: 2em;
+	line-height: 0.25em;
+	height: auto;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	margin-left: 0;
+}
+
+.brand-logo {
+	font-family: "felt-tip-woman", "museo-sans", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.35em;
+	text-transform: lowercase !important;
+}
+
+.navbar-brand a:focus,
+.navbar-brand a:hover {
+	background-color: @light-grey;
+}
+
+.navbar-toggle {
+	margin-top: 16px
+}
+.navbar-nav {
+  margin-top: 20px;
+}
+
+.dropdown-menu {
+	-webkit-box-shadow: 2px 3px 4px rgba(0,0,0,.25);
+	-moz-box-shadow: 2px 3px 4px rgba(0,0,0,.25);
+	box-shadow: 2px 3px 4px rgba(0,0,0,.25);
+	border:0 none;
+	border-radius:  0;
+  min-width: 220px;
+  padding: 0;
+}
+
+.dropdown-menu>li>a { 
+  padding: 10px 20px;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+	font-weight: bold;
+}
+
+
+
+@media only screen and (max-width : 768px) {
+
+	.navbar .container-fluid {
+		margin-top: 20px
+	}
+
+	.navbar-collapse { 
+		z-index: 9001;
+  	width: 100%;
+		background: #fff;
+	}
+
+	.navbar-collapse ul { 
+		
+	}
+
+	.navbar-collapse li { 
+		border-bottom: 1px solid @pink;
+		
+	}
+	.navbar-collapse li:last-child {
+		border-bottom: 0 none;
+	}
+
+	.navbar-collapse li a { 
+		padding-left: 40px;
+	}
+
+	.navbar-header {
+    display: inline-block;
+    float: right;
+	}
+	
+	.navbar-nav .open .dropdown-menu {
+    margin-left: 15px;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	.navbar .navbar-brand {
+	  padding: 0.5em 0 0.5em 0.5em;
+		font-size: 4em;
+		line-height: 1em;
+	}
+
+  .navbar-brand,
+  .navbar-nav {
+  	float: none;
+  	text-align: center;
+  	margin-left: 0;
+  }
+
+	.navbar-nav>li {
+  	display: inline-block;
+  	float: none;
+	}
+
+	.navbar-brand {
+  	border-bottom: 1px solid @pink;
+	}
+
+}

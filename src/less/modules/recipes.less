@@ -1,0 +1,211 @@
+/*--------------------------------------------------------------
+Recipe Index
+--------------------------------------------------------------*/
+.recipe-index h2 {
+  background: #f1f1f1;
+  padding: 10px;
+  margin: 0 0 20px;
+}
+.recipe-index h2 .title-link {
+	float:right;    
+	margin: 3px 0 0;
+  font-size: 0.75em;
+}
+.recipe-index .subcategory {
+	text-align: center;
+}
+.recipe-index .subcategory img {
+	margin: 0 auto;
+}
+.recipe-index .subcategory a {
+	display: block;
+	margin-top: 10px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.recipe-index .view-all {
+	margin: 20px 0 40px;
+}
+.recipe-index .view-all a {
+	display: block;
+	background: rgb(240, 240, 216);
+  background: rgba(240, 240, 216, 0.5); 
+  display: block;
+	color: @dark-grey;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-size: 0.75em;
+}
+.recipe-index .view-all a:hover,
+.recipe-index .view-all a:focus,
+.recipe-index .view-all a:active {
+	background: #f1f1f1;
+}
+
+/*--------------------------------------------------------------
+Zip List
+--------------------------------------------------------------*/
+.zlrecipe-container-border {
+	padding: 2em 0 0;
+}
+
+#zlrecipe-container .img-desc-wrap {
+	background: none transparent;
+	max-width: 240px;
+  float: right;
+}
+#zlrecipe-container .img-desc-wrap img {
+	border: 0 none;
+	float: right;
+}
+
+#zlrecipe-ingredients,
+#zlrecipe-instructions  {
+    border-top: 1px solid;    
+    padding-top: 2em;
+}
+
+#zlrecipe-ingredients {
+    width: 100%;
+}
+
+#zlrecipe-instructions {
+    width: 50%;
+}
+
+#zlrecipe-title {
+	margin: 0 0 0.5em;
+}
+
+.recipe-info-wrapper {
+	margin: 1em 0;
+	overflow: hidden;
+}
+
+.recipe-summary p {
+	margin: 0;
+	padding: 0
+}
+
+#zlrecipe-rating {
+	margin-bottom: 0;
+	font-size: .875em;
+}
+.recipe-timings,
+.recipe-nutrition-list,
+.zlrecipe-summary {
+	font-size: .875em;
+}
+#zlrecipe-summary {
+    margin: 1em 0 0;
+}
+
+.recipe-timings {
+	border: 1px solid @light-grey;
+  padding: 10px 20px;
+  margin: 0;
+  background: #F3F3F3;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.recipe-nutrition-list {
+	margin: .5em 0;
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+
+.recipe-timings i, 
+.recipe-timings ul {
+ vertical-align: middle;
+	display: inline-block;
+}
+
+.recipe-timings i {
+	margin-right: 1em;
+}
+
+.recipe-timings .recipe-info strong {
+	display: block;
+}
+
+.recipe-info {
+  margin: 5px 0 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.recipe-info li {
+	float:left;
+	display: inline-block;
+	border-right:1px solid;
+	padding-right: 0.8em;
+  margin-right: 0.8em;
+  line-height: 1;
+}
+
+
+.recipe-timings .recipe-info li {
+	padding-right: 1em;
+	margin-right: 1em;
+}
+.recipe-info li:last-of-type {
+	border:0 none;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+
+.zl-recipe-link,
+.zlrecipe-print-link {
+	float: right;
+	display: inline-block;
+}
+
+.zlrecipe-print-link a {
+	padding: 5px 15px;
+  border: 0 none;
+  margin: 0;
+  display: block;
+  background: #F0F0D8;
+  border-radius: 5px;
+  color: #4E4E22;
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+.zlrecipe-print-link a i {
+	margin-right: 5px;
+}
+
+.recipe-nutrition-list,
+#zlrecipe-ingredients-list {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: inside none
+}
+
+#zlrecipe-instructions-list {
+	margin-left: 0;
+}    
+
+.instruction-label,
+.ingredient-label {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+#zlrecipe-nutrition {
+  margin: 10px 0 0;
+}
+
+
+@media only screen and (max-width : 768px) {
+
+	#zlrecipe-container h3 {
+	    width: auto;
+	}
+}

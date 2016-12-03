@@ -1,0 +1,275 @@
+
+/*--------------------------------------------------------------
+ Typography
+--------------------------------------------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+	color: @dark-grey;
+	font-family: "museo-sans", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-size: 1.5rem;
+	line-height: 1.75em;
+   letter-spacing: 0.035em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.h-1, .h-2, .h-3, .h-5 {
+	clear: both;
+	line-height: 1.1em;
+	font-weight: bold;
+
+}
+h1, .h1, .h-1, .entry-title {
+	font-family: "chaparral-pro-display", serif;
+	letter-spacing: .06em;
+	font-size: 2.5em;
+
+}
+
+h2, .h2, .h-2 {
+	font-family: "chaparral-pro-display", serif;
+	letter-spacing: .06em;
+	font-size: 1.95em;
+  margin-bottom: 0.5em;
+}
+h3, .h3, .h-3 {
+	font-family: "chaparral-pro-display", serif;
+	letter-spacing: .06em;
+	font-size: 1.5em;
+  margin-bottom: 0.5em;
+
+}
+h4, .h4, .h-4,
+h5, .h5, .h-5 {
+	font-weight: bold;
+  margin-bottom: 1.5em;
+
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn, cite, em, i {
+	font-style: italic;
+}
+blockquote {
+  margin: 1.5em 10px 1.5em 0;
+  padding: 0.5em 10px 0.5em 1em;
+  quotes: "\201C""\201D""\2018""\2019";
+  color: #aaa;
+  font-style: italic;
+  font-family: serif;
+  font-size: 1.25em;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.15em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  margin-bottom: 0;
+}
+blockquote cite {
+	display: block;
+	margin-top: 20px;
+  font-size: 75%;
+}
+address {
+	margin: 0 0 1.5em;
+}
+pre {
+	background: @light-grey;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+code, kbd, tt, var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+small {
+	font-size: 75%;
+}
+big {
+	font-size: 125%;
+}
+
+
+.entry-title a {
+	color: #444;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+	color: #30B275
+}
+
+ol + h2,
+ol + .h2,
+ol + h3,
+ol + .h3,
+ul + h2,
+ul + .h2,
+ul + h3,
+ul + .h3,
+p + h2,
+p + .h2,
+p + h3,
+p + .h3 {
+	margin-top: 1.5em;
+}
+
+.entry-header .entry-meta {
+	line-height: 1em;
+}
+
+.widget-title {
+	font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+
+.widget p,
+.widget ul {
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+.widget #s {
+	width: 95%;
+}
+
+.list-unstyled {
+	margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+Links
+--------------------------------------------------------------*/
+a {
+	color: @green;
+	.transition(color 500ms ease-in-out);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: @pink;
+		text-decoration: none;
+	}
+}
+
+
+a[target="_blank"] i {
+  margin-left: 5px;
+  font-size: .8em;
+}
+
+.more-link,
+.widget .btn.primary {
+
+	background: @green;
+	border: 0 none;
+	border-radius: 0;
+	border-width: 0;
+	box-shadow: none;
+	color: #fff;
+	display: inline-block;
+	font-size: .85em;
+	letter-spacing: 1px;
+	padding: 5px 15px;
+	position: relative;
+	text-transform: uppercase;
+	margin: 20px auto 0;
+	width: 95%;
+
+	.transition(background 500ms ease-in-out);
+
+	&:before {
+		content: ' ';
+		border: 1px solid @green;
+  	position: absolute;
+  	z-index: -1;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+		.transition(background 500ms 100ms ease-in-out);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: @pink;
+		color: #fff;
+
+		&:before {
+			content: ' ';
+			border: 1px solid @pink;
+	  	position: absolute;
+	  	z-index: -1;
+	    top: -2px;
+	    left: -2px;
+	    right: -2px;
+	    bottom: -2px;
+		}
+	}
+
+	i {
+		float: right;
+		font-style: normal;
+	}
+}
+
+ul, ol {
+	margin-left: 0;
+}
+
+/*--------------------------------------------------------------
+Responsive
+--------------------------------------------------------------*/
+@media (min-width: 768px) {
+
+	.more-link {
+		width:35%;
+	}
+
+}
+

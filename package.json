@@ -1,0 +1,24 @@
+{
+  "name": "MBL-Theme",
+  "version": "0.0.1",
+  "description": "theme for my food blog",
+  "main": "node_modules/docpad/bin/docpad-server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.2",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "less-plugin-clean-css": "^1.5.1",
+    "path": "^0.12.7"
+  },
+  "dependencies": {
+    "bower": "^1.7.7"
+  }
+}

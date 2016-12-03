@@ -1,0 +1,4 @@
+node_modules
+public_html
+*.indd
+.DS_STORE
